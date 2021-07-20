@@ -10,6 +10,7 @@
 html {
     font-family: 'Quicksand', sans-serif;
     color: #FFF;
+    overflow-x: hidden;
 }
 
 /******
@@ -83,6 +84,45 @@ welcome-section
 }
 
 /**********
+CONTACT-ME
+**********/
+
+#contact-me {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #F87060;
+}
+
+#contact-header h2 {
+    font-size: 3.6rem;
+}
+
+#contact-links {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+}
+
+#contact-links a {
+    display: inline-block;
+    margin: 0.8rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease-out;
+}
+
+#contact-links a:hover {
+    color: #102542;
+    transform: translateY(8px);
+}
+
+#contact-links i {
+    margin-right: 0.5rem;
+}
+
+/**********
 MEDIAQUERY
 **********/
 
@@ -110,6 +150,12 @@ MEDIAQUERY
     .nav-link {
         margin-right: 0px;
         padding: 0 1rem;
+    }
+    #contact-header h2 {
+        font-size: 2rem;
+    }
+    #contact-links {
+        font-size: 1.4rem;
     }
 }
 
