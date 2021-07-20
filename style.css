@@ -1,6 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 * {
     padding:0;
     margin:0;
     vertical-align:baseline;
     border:0
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    color: #FFF;
+}
+
+/******
+NAVBAR
+******/
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    background-color: #102542;
+}
+
+#navbar-logo {
+    width: 50vw;
+}
+
+#navbar-logo h1 {
+    margin-left: 6rem;
+    padding: 1.4rem;
+}
+
+#nav-link-div {
+    width: 50vw;
+}
+
+#nav-link-list {
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 1.4rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: #FFF;
+}
+
+/***************
+welcome-section
+***************/
+
+#welcome-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #F87060;
+}
+
+#welcome-section h1 {
+    font-size: 2.6rem;
+}
+
+#welcome-section p {
+    color: #102542;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+/**********
+MEDIAQUERY
+**********/
+
+@media (max-width: 850px) {
+    #nav-link-list {
+        margin-right: 3rem;
+        padding: 1.7rem;
     }
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 670px) {
+    #navbar-logo {
+        display: none;
+    }
+    #nav-link-div {
+        width: 100vw;
+    }
+    #nav-link-list {
+        justify-content: center;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    #welcome-section h1 {
+        font-size: 2rem;
+        padding: 0 1em;
+    }
+    #welcome-section p {
+        font-size: 1.4rem;
+    }
+}
