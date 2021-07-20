@@ -83,6 +83,54 @@ welcome-section
     font-size: 2rem;
 }
 
+/********
+PROJECTS
+********/
+
+#projects {
+    background-color: #7B8CDE;
+    text-align: center;
+    padding: 1.2rem 1rem;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    max-width: 650px;
+    margin: 0 auto;
+    border-bottom: 3px solid white;
+}
+
+.projects-grid {
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.project-tile {
+    text-decoration: none;
+    background-color: #102542;
+    -webkit-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5); 
+    box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5);
+}
+
+.project-tile p:hover {
+    color: #F87060;
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto;
+}
+
+.project-tile p {
+    font-size: 1.5rem;
+    color: #FFF;
+    padding: 1.4rem;
+}
+
 /**********
 CONTACT-ME
 **********/
@@ -156,6 +204,16 @@ MEDIAQUERY
     }
     #contact-links {
         font-size: 1.4rem;
+    }
+    #projects h2 {
+        font-size: 1.6rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-tile p {
+        font-size: 1.2rem;
+        padding: 1rem;
     }
 }
 
