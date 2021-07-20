@@ -43,14 +43,19 @@ NAVBAR
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
-    padding: 1.4rem;
+    height: 100%;
+    align-items: center;
 }
 
 .nav-link {
+    margin-right: 2.4rem;
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 1rem;
     color: #FFF;
+}
+
+.nav-link:hover {
+    color: #F87060;
 }
 
 /***************
@@ -84,7 +89,6 @@ MEDIAQUERY
 @media (max-width: 850px) {
     #nav-link-list {
         margin-right: 3rem;
-        padding: 1.7rem;
     }
     .nav-link {
         font-size: 1.2rem;
@@ -97,10 +101,15 @@ MEDIAQUERY
     }
     #nav-link-div {
         width: 100vw;
+        height: 4.8rem;
     }
     #nav-link-list {
         justify-content: center;
         margin-right: 0px;
+    }
+    .nav-link {
+        margin-right: 0px;
+        padding: 0 1rem;
     }
 }
 
